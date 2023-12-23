@@ -1,31 +1,43 @@
-# Sleep-Health-and-Lifestyle
-This synthetic dataset contains sleep and cardiovascular metrics as well as lifestyle factors of close to 400 fictive persons.
+# Sleep-Health-and-Lifestyle Project
 
-The workspace is set up with one CSV file, `data.csv`, with the following columns:
+## Overview
+This project presents an analysis of a synthetic dataset containing sleep, cardiovascular metrics, and lifestyle factors for nearly 400 fictive individuals. The data explores various aspects such as sleep patterns, physical activity, stress levels, and their impact on sleep health.
 
-- `Person ID`
-- `Gender`
-- `Age`
-- `Occupation`
-- `Sleep Duration`: Average number of hours of sleep per day
-- `Quality of Sleep`: A subjective rating on a 1-10 scale
-- `Physical Activity Level`: Average number of minutes the person engages in physical activity daily
-- `Stress Level`: A subjective rating on a 1-10 scale
-- `BMI Category`
-- `Blood Pressure`: Indicated as systolic pressure over diastolic pressure
-- `Heart Rate`: In beats per minute
-- `Daily Steps`
-- `Sleep Disorder`: One of `None`, `Insomnia` or `Sleep Apnea`
+## Dataset
+The dataset is provided in a CSV file, data.csv, containing columns like Person ID, Gender, Age, Occupation, and various health and lifestyle metrics.
 
-Check out the guiding questions or the scenario described below to get started with this dataset!
-Feel free to make this workspace yours by adding and removing cells, or editing any of the existing cells.
+## Source
+The dataset is sourced from Kaggle: Sleep Health and Lifestyle Dataset (https://www.kaggle.com/datasets/uom190346a/sleep-health-and-lifestyle-dataset/).
 
-Source: [Kaggle](https://www.kaggle.com/datasets/uom190346a/sleep-health-and-lifestyle-dataset/)
+## Scenarios
+### Identifying Potential Sleep Disorders
+- Objective: Develop a classifier to predict sleep disorders based on lifestyle and health metrics.
+- Background: For a health insurance company aiming to determine client premiums based on potential sleep disorders.
 
-### 🔍 **Scenario: Automatically identify potential sleep disorders**
+## Exploratory Data Analysis (EDA)
+The EDA includes visualizations and analyses like:
+- Relationship between occupation and sleep patterns.
+- Age, sleep duration, and sleep disorders.
+- Sleep quality across different sleep disorders.
+- Gender distribution in sleep disorders.
+- Impact of physical activity on sleep health.
 
-This scenario helps you develop an end-to-end project for your portfolio.
+## Feature Engineering
+- Standardization and encoding of variables.
+- Reduction of multicollinearity.
+- Preparing the dataset for predictive modeling.
 
-Background: You work for a health insurance company and are tasked to identify whether or not a potential client is likely to have a sleep disorder. The company wants to use this information to determine the premium they want the client to pay.
+## Modeling
+### Decision Tree Classifier
+- Baseline model establishment.
+- Hyperparameter tuning using Grid Search.
+- Optimized Decision Tree Classifier.
+- Confusion Matrix Analysis for performance interpretation.
 
-**Objective**: Construct a classifier to predict the presence of a sleep disorder based on the other columns in the dataset.
+## Conclusion
+The project concludes with insights into model performance and its application in medical decision-making.
+
+## Usage
+- Clone the repository.
+- Install required dependencies.
+- Run Jupyter Notebooks to explore the dataset and models.
